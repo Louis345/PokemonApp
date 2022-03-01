@@ -162,7 +162,6 @@ function App() {
 
   return (
     <React.Fragment>
-      <ToastContainer />
       <Header
         onSearch={(e) => setSearch(e.target.value)}
         onTab={(isFavorite: number) => {

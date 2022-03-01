@@ -26,6 +26,7 @@ const HeartIcon: React.FC<HeartIconProps> = ({
   const [favoritePokemon] = useMutation(SAVE_FAVORITE_POKEMON);
   const [unfavoritePokemon] = useMutation(UNFAVORITE_POKEMON);
   const notify = (message: string) => toast(message);
+  console.log({ liked });
   return (
     <React.Fragment>
       {liked || isFavorite ? (

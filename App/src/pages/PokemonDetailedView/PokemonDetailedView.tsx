@@ -30,8 +30,10 @@ const PokemonDetailedView = () => {
     },
   } = location.state as LocationState;
 
-  const [, toggle] = UseSound(sound);
+  console.log({ isFavorite });
 
+  const [, toggle] = UseSound(sound);
+  console.log("test");
   return (
     <React.Fragment>
       <div className={styles.wrapper}>
@@ -90,8 +92,8 @@ const PokemonDetailedView = () => {
           </div>
         </div>
       </div>
-      {evolutions.length > 0 && <h1>Evolutions</h1>}
       <div className={styles.evolutionContainer}>
+        <div>{evolutions.length > 0 && <h1>Evolutions</h1>}</div>
         {evolutions.map((evolution, index) => (
           <div className={styles.container} style={{ margin: "5px" }}>
             <img src={evolution.image} alt={name} className={styles.image} />
