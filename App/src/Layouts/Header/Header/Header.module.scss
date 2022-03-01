@@ -1,0 +1,31 @@
+.container {
+  position: sticky;
+  top: 0px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  z-index: 1;
+  height: 6rem;
+}
+
+.subContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.bottomContainer {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+
+.icon {
+  color: #71c1a1;
+  height: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: #eee;
+  }
+}

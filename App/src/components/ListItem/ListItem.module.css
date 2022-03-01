@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  border: 1px solid #dadada;
+  background-color: #eeee;
+  height: 50px;
+  margin: 5px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.image {
+  width: 100%;
+  max-width: 67px;
+  height: auto;
+  padding: 1px;
+  margin-right: 10px;
+}
+
+.typeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
