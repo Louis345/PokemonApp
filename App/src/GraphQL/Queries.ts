@@ -75,6 +75,11 @@ export const GET_ALL_POKEMON = gql`
           minimum
           maximum
         }
+         evolutions {
+          id
+          image
+          isFavorite
+        }
       }
   }
 }

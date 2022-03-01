@@ -8,6 +8,7 @@ import { PokemonProps } from "./types/Pokemon";
 import { useNavigate } from "react-router-dom";
 import ListItem from "./components/ListItem/ListItem";
 import useOnScreen from "./hooks/UseOnScreen/UseOnScreen";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const navigate = useNavigate();
@@ -42,8 +43,6 @@ function App() {
       });
     }
   }, [isBottom]);
-
-  console.log({ isBottom });
 
   useEffect(() => {
     if (filteredPokemon) {
@@ -163,6 +162,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <ToastContainer />
       <Header
         onSearch={(e) => setSearch(e.target.value)}
         onTab={(isFavorite: number) => {

@@ -87,3 +87,11 @@
   color: #43bd95;
   margin: 5px;
 }
+
+.evolutionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

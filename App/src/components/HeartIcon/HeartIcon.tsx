@@ -6,7 +6,7 @@ import {
 } from "../../GraphQL/mutations";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import styles from "./HeartIcon.module.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 interface HeartIconProps {
@@ -49,7 +49,6 @@ const HeartIcon: React.FC<HeartIconProps> = ({
           size={size}
         />
       )}
-      <ToastContainer />
     </React.Fragment>
   );
 };

@@ -5,6 +5,11 @@ type PokemonDimension = {
 }
 
 
+type PokemonEvolutions = {
+    id: string;
+    image: string;
+    isFavorite: boolean;
+}
 
 
 export interface PokemonProps  {
@@ -22,5 +27,6 @@ export interface PokemonProps  {
     image: string;
     sound: string;
     isFavorite: boolean;
+    evolutions: PokemonEvolutions[];
 };
 
