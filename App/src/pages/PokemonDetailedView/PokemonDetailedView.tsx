@@ -94,7 +94,12 @@ const PokemonDetailedView = () => {
       <div className={styles.evolutionContainer}>
         {evolutions.map((evolution, index) => (
           <div className={styles.container} style={{ margin: "5px" }}>
-            <img src={evolution.image} alt={name} className={styles.image} />
+            <img
+              src={evolution.image}
+              alt={name}
+              className={styles.image}
+              style={{ height: "100%" }}
+            />
             <div className={styles.footer}>
               <div className={styles.column}>
                 <div className={styles.subColumn}>
