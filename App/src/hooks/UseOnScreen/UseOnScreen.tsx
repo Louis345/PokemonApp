@@ -8,7 +8,6 @@ export default function useOnScreen(ref: React.RefObject<HTMLElement>) {
   );
 
   useEffect(() => {
-    console.log({ ref });
     if (!ref.current) return;
     observer.observe(ref.current);
     return () => {
