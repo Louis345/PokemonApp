@@ -18,7 +18,7 @@ $ npm start
 #### Run the frontend
 
 ```
-$ cd frontend
+$ cd App
 $ npm install
 $ npm start
 
